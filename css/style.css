@@ -749,6 +749,9 @@ fill: var(--light-color);
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
     border-radius: 4px;
     min-width: 165px;
     height: 40px;
@@ -756,6 +759,7 @@ fill: var(--light-color);
     color: var(--white-background-color);
     background-color: var(--primary-brand-color);
     border: none;
+    cursor: pointer;
 }
 .svg-subscribe {
     margin-left: 16px;
