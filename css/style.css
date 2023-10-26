@@ -771,6 +771,9 @@ fill: var(--light-color);
     margin-right: 80px;
 }
 
+
+
+
 .modal-title{
     margin-bottom: 16px;
     font-weight: 500;
@@ -838,5 +841,80 @@ fill: var(--light-color);
 .input-box:hover+.svg-icon,
 .input-box:focus+.svg-icon,
 .input-box:active+.svg-icon {
-    fill: var(--primary-brand-color)
+    fill: var(--primary-brand-color);
+}
+.modal-comment{
+    height: 120px;
+    resize: none;
+    padding: 8px 16px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: var(--MODAL-TXT);
+    background-color: transparent;
+    border: 1px solid var(--MODAL-TXT);
+    border-radius: 4px;
+    outline: transparent;
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-comment:hover,
+.modal-comment:focus,
+.modal-comment:active {
+    border-color: var(--primary-brand-color);
+}
+
+.modal-comment::placeholder {
+    color: var(--MODAL-TXT);
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.contact-element{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 24px;
+}
+.check-box {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 2px;
+    fill: transparent;
+    transition-property: background-color, border, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-privacy:checked+.contacts-label span {
+    background-color: var(--pressed-state-color);
+    border: none;
+    fill: var(--light-color);
+}
+
+.svg-icon-checked {
+    width: 15px;
+    height: 15px;
+}
+
+.link-privacy {
+    color: var(--primary-brand-color);
 }
